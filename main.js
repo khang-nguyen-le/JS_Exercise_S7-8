@@ -11,6 +11,11 @@ function themSo() {
     getEle('mangNguoiDungNhap').style.display = 'block'
 }
 
+function xoaSo() {
+    arr.splice(0);
+    getEle('mangNguoiDungNhap').innerHTML = `Mảng [ ${arr} ]`
+}
+
 // function demSoDuong() {
 //     var demSoDuong = 0;
 //     for (var i = 0; i < arr.length; i++){
@@ -22,6 +27,7 @@ function themSo() {
 // }
 
 function demSoDuong() {
+
     var demSoDuong = 0;
 
     arr.forEach(function (value) {
@@ -174,6 +180,11 @@ function themSoA() {
     arr1.push(soA);
     getEle('mangSoThuc').innerHTML = `Mảng số thực: [${arr1}]`
     getEle('mangSoThuc').style.display = 'block'
+}
+
+function xoaSoA() {
+    arr1.splice(0);
+    getEle('mangSoThuc').innerHTML = `Mảng số thực: [${arr1}]`
 }
 
 function demSoNguyen() {
