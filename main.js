@@ -57,7 +57,7 @@ function demSoDuong() {
 function tongSoDuong() {
     var tongSoDuong = arr.reduce(function (tongSoDuong, currentValue) {
         if (currentValue > 0) {
-            return tongSoDuong += currentValue;
+            return tongSoDuong + currentValue;
         } else {
             return tongSoDuong
         }
